@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <title>Emergency Site</title>
+  </head>
+  <body id="register">
+    <header>
+      <nav>
+        <div id="logotype-wrapper" class="logo">
+          <a href="index.html"> LOGO-TYPE </a>
+        </div>
+        <ul class="menu">
+          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a class="menuItem" href="register.html">Indberet</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <h1>INDBERET</h1>
+      <section id="form-section">
+        <article id="form-info">
+          <h2>STJÅLET GRØNSAGER RAPPORT</h2>
+          <p>Udfyld nedenstående rapport om de stjålne grøntsager.</p>
+        </article>
+
+        <form id="webform">
+          <label for="first_name">Fornavn</label>
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            placeholder="Indtast dit fornavn"
+            required
+            aria-label="Fornavn"
+            aria-describedby="first_name_error"
+          />
+          <p id="first_name_error" class="error-message">
+            Udfyld venligst dit fornavn
+          </p>
+
+          <label for="last_name">Efternavn</label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Indtast dit efternavn"
+            required
+            aria-label="Efternavn"
+            aria-describedby="last_name_error"
+          />
+          <p id="last_name_error" class="error-message">
+            Udfyld venligst dit efternavn
+          </p>
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="fx navn@mail.dk"
+            required
+            aria-label="Email"
+            aria-describedby="email_error"
+          />
+          <p id="email_error" class="error-message">
+            Indtast en gyldig emailadresse
+          </p>
+
+          <label for="phone">Telefonnummer</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="fx 12345678"
+            required
+            aria-label="Telefonnummer"
+            aria-describedby="phone_error"
+          />
+          <p id="phone_error" class="error-message">
+            Udfyld venligst dit telefonnummer
+          </p>
+
+          <label for="incident_date">Dato for hændelsen</label>
+          <input
+            type="date"
+            id="incident_date"
+            name="incident_date"
+            required
+            aria-label="Dato for hændelsen"
+            aria-describedby="incident_date_error"
+          />
+          <p id="incident_date_error" class="error-message">
+            Vælg dato for hændelsen
+          </p>
+
+          <fieldset aria-label="Stjålne grøntsager">
+            <legend>Stjålne grøntsager</legend>
+
+            <label>
+              <input type="checkbox" name="vegetables" value="Tomat" /> Tomat
+            </label>
+            <label>
+              <input type="checkbox" name="vegetables" value="Agurk" /> Agurk
+            </label>
+            <label>
+              <input type="checkbox" name="vegetables" value="Kartoffel" />
+              Kartoffel
+            </label>
+            <label>
+              <input type="checkbox" name="vegetables" value="Gulerod" />
+              Gulerod
+            </label>
+            <label>
+              <input type="checkbox" name="vegetables" value="Salat" /> Salat
+            </label>
+            <label>
+              <input type="checkbox" name="vegetables" value="Løg" /> Løg
+            </label>
+            <label>
+              <input type="checkbox" name="vegetables" value="Peberfrugt" />
+              Peberfrugt
+            </label>
+            <label>
+              <input type="checkbox" name="vegetables" value="Majs" /> Majs
+            </label>
+            <label>
+              <input type="checkbox" name="vegetables" value="Andet" /> Andet
+            </label>
+            <p id="vegetables_error" class="error-message">
+              Vælg mindst én grøntsag
+            </p>
+          </fieldset>
+
+          <label for="description">Beskrivelse / yderligere noter</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="5"
+            placeholder="Beskriv hændelsen, hvor og hvordan grøntsagerne blev stjålet..."
+            aria-label="Beskrivelse af hændelsen"
+            aria-describedby="description_error"
+          ></textarea>
+          <p id="description_error" class="error-message">
+            Tilføj venligst en kort beskrivelse
+          </p>
+
+          <button type="submit">Indsend rapport</button>
+        </form>
+      </section>
+
+      <section id="form-summary">
+        <h2>Summary</h2>
+        <article>
+          <p class="placeholder">Opsummering</p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <nav class="some">
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+      <nav class="another">
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+      <nav class="yetanother">
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="js/burger.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>
