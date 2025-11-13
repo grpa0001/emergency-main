@@ -111,42 +111,67 @@
             Vælg dato for hændelsen
           </p>
 
-          <fieldset aria-label="Stjålne grøntsager">
+          <fieldset>
             <legend>Stjålne grøntsager</legend>
-
-            <label>
-              <input type="checkbox" name="vegetables" value="Tomat" /> Tomat
-            </label>
-            <label>
-              <input type="checkbox" name="vegetables" value="Agurk" /> Agurk
-            </label>
-            <label>
-              <input type="checkbox" name="vegetables" value="Kartoffel" />
-              Kartoffel
-            </label>
-            <label>
-              <input type="checkbox" name="vegetables" value="Gulerod" />
-              Gulerod
-            </label>
-            <label>
-              <input type="checkbox" name="vegetables" value="Salat" /> Salat
-            </label>
-            <label>
-              <input type="checkbox" name="vegetables" value="Løg" /> Løg
-            </label>
-            <label>
-              <input type="checkbox" name="vegetables" value="Peberfrugt" />
-              Peberfrugt
-            </label>
-            <label>
-              <input type="checkbox" name="vegetables" value="Majs" /> Majs
-            </label>
-            <label>
-              <input type="checkbox" name="vegetables" value="Andet" /> Andet
-            </label>
-            <p id="vegetables_error" class="error-message">
-              Vælg mindst én grøntsag
-            </p>
+            <label
+              ><input
+                type="checkbox"
+                name="vegetables"
+                value="Tomat"
+              />Tomat</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="vegetables"
+                value="Agurk"
+              />Agurk</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="vegetables"
+                value="Kartoffel"
+              />Kartoffel</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="vegetables"
+                value="Gulerod"
+              />Gulerod</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="vegetables"
+                value="Salat"
+              />Salat</label
+            >
+            <label
+              ><input type="checkbox" name="vegetables" value="Løg" />Løg</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="vegetables"
+                value="Peberfrugt"
+              />Peberfrugt</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="vegetables"
+                value="Majs"
+              />Majs</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="vegetables"
+                value="Andet"
+              />Andet</label
+            >
           </fieldset>
 
           <label for="description">Beskrivelse / yderligere noter</label>
@@ -170,6 +195,14 @@
         <h2>Summary</h2>
         <article>
           <p class="placeholder">Opsummering</p>
+          <div>
+            <p>Fornavn: <span id="first_name_output"></span></p>
+            <p>Efternavn: <span id="last_name_output"></span></p>
+            <p>Email: <span id="email_output"></span></p>
+            <p>Telefonnummer: <span id="tlf_output"></span></p>
+            <p>incident date: <span id="incident_date_Output"></span></p>
+            <p>Grønsager stjålet: <span id="vegetables_output"></span></p>
+          </div>
         </article>
       </section>
     </main>
@@ -200,6 +233,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/register.js"></script>
   </body>
 </html>
