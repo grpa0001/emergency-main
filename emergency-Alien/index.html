@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -35,28 +36,38 @@
       <div id="main-disclamer-content">
         <img src="warning" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
+          <h1>over</h1>
           <p class="sub">Underrubrik</p>
         </div>
       </div>
     </section>
     <main>
+
+      
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/vigtigMeddelelse.png" alt="teaser_img" />
           <div class="daily_text">
             <h2>Teaser</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, maxime doloribus? Id ipsam, autem, quas fugit fugiat sunt delectus tempora architecto quisquam officiis, iure illo animi quo nulla. Mollitia, officia.</p>
+            <details>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
-            </p>
+            </p>          
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
+        </details>
+
+
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/QrInfo.png" alt="teaser_img" />
           <div class="daily_text">
             <h2>Teaser</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ullam recusandae beatae illo, impedit porro error corrupti ipsa minus cupiditate facilis aspernatur, quaerat quae rerum, minima a quia! Iusto, facilis.</p>
+            <details>
+            <summary>se mere</summary>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
@@ -64,26 +75,57 @@
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
+        </details>
       </section>
+
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
+          <h3>Nyhed 1</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <img src="img/AlienAbduction.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="popup-nyhed1">Læs mere</button>
         </article>
+
+        <div popover id="popup-nyhed1">
+          <h2>🛸 Nyhed 1 – Alien aktivitet</h2>
+          <p>
+            Vidner har observeret en mystisk UFO over grøntsagsmarken natten til
+            tirsdag. Flere tomater er forsvundet, og området er nu under
+            undersøgelse.
+          </p>
+        </div>
+
         <article class="news_card">
-          <h3>Nyhed</h3>
+          <h3>Nyhed 2</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <img src="img/AlienRoute.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="popup-nyhed2">Læs mere</button>
         </article>
+
+        <div popover id="popup-nyhed2">
+          <h2>🛸 Nyhed 1 – Alien aktivitet</h2>
+          <p>
+            Vidner har observeret en mystisk UFO over grøntsagsmarken natten til
+            tirsdag. Flere tomater er forsvundet, og området er nu under
+            undersøgelse.
+          </p>
+        </div>
+
         <article class="news_card">
-          <h3>Nyhed</h3>
+          <h3>Nyhed 3</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <img src="img/alienSight.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="popup-nyhed3">Læs mere</button>
         </article>
+
+        <div popover id="popup-nyhed3">
+          <h2>🛸 Nyhed 1 – Alien aktivitet</h2>
+          <p>
+            Vidner har observeret en mystisk UFO over grøntsagsmarken natten til
+            tirsdag. Flere tomater er forsvundet, og området er nu under
+            undersøgelse.
+          </p>
+        </div>
       </section>
     </main>
 
