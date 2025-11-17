@@ -10,7 +10,7 @@ header {
 
 #main-disclamer {
   height: 225px;
-  background-color: var(--color-head-bg);
+  background-color: #fffae2;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -36,6 +36,18 @@ h1 {
   margin: 5px 0;
   line-height: 1.3rem;
   text-align: left;
+}
+
+#main-disclamer h1 {
+  font-size: 4rem; /* smaller, readable */
+  margin: 0 0 0.3rem 0;
+  line-height: 1.2;
+}
+
+#main-disclamer .sub {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
 }
 
 #instruction h1,
@@ -67,12 +79,12 @@ h3 {
   font-size: var(--headline3-size);
 }
 
-main>h1 {
+main > h1 {
   width: calc(80% - 6rem);
 }
 
 /* NAVIGATION STRUCTURES */
-header>nav {
+header > nav {
   height: 100%;
   background-color: var(--color-menu-bg);
 }
@@ -92,19 +104,33 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: var(--color-logotype-bg);
+  background-color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 3.6rem;
 }
 
-#logotype-wrapper>a {
+#logotype-wrapper img {
+  width: auto; /* Makes the SVG scale naturally */
+  height: 2.5rem; /* Controls the logo height */
+  max-width: 140px; /* Optional: hard max width */
+  margin-left: 1rem; /* Keep spacing like before */
+}
+
+#logotype-wrapper > a {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
   width: max-content;
   margin-left: 1rem;
+}
+
+#main-disclamer-content img {
+  width: auto; /* don’t stretch to full width */
+  max-width: 140px; /* choose a size you like */
+  height: auto; /* keep proportions */
+  flex-shrink: 0; /* don’t squish when window is small */
 }
 
 /* Global menu */
@@ -118,7 +144,7 @@ header nav li a {
 }
 
 /* Pilen efter menu-tekst */
-header>nav li>a:after {
+header > nav li > a:after {
   content: " \2192";
 }
 

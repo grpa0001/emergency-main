@@ -31,6 +31,7 @@ function handleSubmit(event) {
   tlfOutput.textContent = phone;
   incidentDateOutput.textContent = incident_date;
 
+  //
   vegetablesOutput.textContent = vegetables.length
     ? vegetables.join(", ")
     : "—";
