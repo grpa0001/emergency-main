@@ -10,13 +10,22 @@ header {
 
 #main-disclamer {
   height: 225px;
-  background-color: #fffae2;
+  background-color: var(--color-head-bg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 2rem;
   padding-bottom: 2%;
   margin-bottom: var(--margin-head-bottom);
+}
+
+button {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25rlh 0.5rlh;
+  cursor: pointer;
 }
 
 #main-disclamer-content {
@@ -27,6 +36,14 @@ header {
 main section {
   padding: 20px;
   border-radius: var(--border-radius);
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 h1 {
@@ -104,7 +121,7 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: white;
+  background-color: var(--color-bg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -112,10 +129,10 @@ nav a {
 }
 
 #logotype-wrapper img {
-  width: auto; /* Makes the SVG scale naturally */
-  height: 2.5rem; /* Controls the logo height */
-  max-width: 140px; /* Optional: hard max width */
-  margin-left: 1rem; /* Keep spacing like before */
+  width: auto;
+  height: 2.5rem;
+  max-width: 140px;
+  margin-left: 1rem;
 }
 
 #logotype-wrapper > a {
